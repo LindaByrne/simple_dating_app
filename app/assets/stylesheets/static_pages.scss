@@ -1,0 +1,32 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$highlight-color: rgb(88, 180, 60);
+
+body{
+    background-image: url("landingPage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+.content-parent
+{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    height: 100vh;
+}
+
+.content-box
+{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.content{
+    border: 1px solid $highlight-color;
+    padding: 20px;
+}
