@@ -32,3 +32,10 @@
 */.DS_Store
 
 .DS_Store
+
+#ignore local self-signed certs
+localhost.crt
+localhost.key
+
+#ignore local vs code setup
+launch.json
