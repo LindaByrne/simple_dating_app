@@ -1,4 +1,5 @@
 <%= stylesheet_link_tag "application" %>
+<%= javascript_include_tag "application" %>
 <%= csrf_meta_tag %>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id" content="481533923687-g6ebs7d9cis87300sqe1c520i3t9g49e.apps.googleusercontent.com">
@@ -12,7 +13,7 @@
                     The journey to find your perfect partner starts here
                 </div>
                 <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                <form id="processAuth" action="/oauth/validate" method="post">
+                <form id="processAuth" action="/login" method="post">
                     <input id="tokenInput" type="text" name="token" style="display: none">
                     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
                 </form>

@@ -1,3 +1,62 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$highlight-color: rgb(88, 180, 60);
+$font-family: Arial, Helvetica, sans-serif;
+$text-color: #fff;
+
+body{
+    background-image: image-url("landingPage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    font-family: $font-family;
+    margin: 0px;
+}
+
+.banner
+{
+    background-color: $highlight-color;
+    padding: 20px;
+    font-size: 2.5em;
+    color: $text-color;
+}
+
+.content-parent
+{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    height: 100vh;
+}
+
+.content-box
+{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.content{
+    border: 1px solid $highlight-color;
+    padding: 20px;
+    background-color: rgba(150,150,150, .24);
+    min-width: 450px;
+    min-height: 250px;
+}
+
+.content-text{
+    margin-left: auto;
+    margin-right: auto;
+    color: $text-color;
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.abcRioButton
+{
+    margin-left:auto;
+    margin-right:auto;
+}

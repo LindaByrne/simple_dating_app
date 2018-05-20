@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'sessions/new/:uid', to: 'sessions#new'
-  get 'static_pages/login'
-  post 'oauth/validate', to: 'oauth#validate'
+  get '/signup/:google_user_id', to: 'users#new'
+  get '/login', to: 'sessions#login'
+  post '/login', to: 'sessions#new'
 end
